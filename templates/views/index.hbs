@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {{>header}}
+  </head>
+  <body>  {{>navbar}}
+
+    <!---- main header ---->
+    <div class="containter-fluid main_header">
+      <div class="row">
+        <div class="col-md-10 col-12 mx-auto">
+          <div class="row">
+            <!--left side div-->
+            <div class="col-md-6 col-12 main_header_left">
+              <p>Welcome to weather app</p>
+              <h1>Get the Latest <span class="text_clr"> Weather</span> Info of your City</h1>
+              <a href="/weather"><button>Check Now</button></a>
+            </div>
+            <!--right side div-->
+
+            <div class="col-md-6 col-12 main_header_right">
+           
+              <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img 
+
+                    src="https://images.ctfassets.net/hrltx12pl8hq/1DauLWsEwcnLf4NpCUMxxZ/85290d98239ff0bbee9803932249c444/weather-shutterstock_1716559711.jpg?fit=fill&w=480&h=320"
+                    class="w-100" 
+                    alt="slide 1">
+                  </div>
+                  <div class="carousel-item">
+                    <img 
+                    src="https://res.cloudinary.com/dtpgi0zck/image/upload/s--eWjIe4k---/c_fill,h_260,w_380/v1/EducationHub/photos/lightning-bolts.jpg" 
+                    class="w-100" 
+                    alt="slide 2">
+                  </div>
+                  <div class="carousel-item">
+                    <img 
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNeOGpU_4tNn7I-so4GpxbpPFl7CEMV47F3w&usqp=CAU" 
+                    class="w-100" 
+                    alt="third slide">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!---footer code-->    
+{{>footer}}
+  </body>
+</html>
